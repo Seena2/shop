@@ -1,12 +1,18 @@
 import { useState } from "react";
 
-const ProductDetail = () => {
+import styles from "../styles/ProductDetails.module.css";
+
+const ProductDetail = ({ products, addToCart }) => {
   const [quantity, setQuantity] = useState(0);
+
+  //const product = products.find(/* Logic to find the specific product */);
+
   return (
-    <div className="product-detail">
-      <h4>Product Detail</h4>
-      <div className="product">
-        <div className="product-image">
+    <div className={styles.productDetail}>
+      <h3>Product Detail</h3>
+      <div className={styles.product}>
+        {/* Image of the product */}
+        <div className={styles.productImage}>
           <img src="" alt="" />
         </div>
         <div className="product-description">
@@ -22,7 +28,9 @@ const ProductDetail = () => {
             neque debitis, similique soluta.
           </p>
           <p>Qty: {quantity}</p>
-          <button>Add to Cart</button>
+          <button type="button" onClick={() => addToCart(product)}>
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>

@@ -3,12 +3,16 @@ import styles from "../styles/Header.module.css";
 
 function MenuLinks({ cartItemsCount }) {
   return (
-    <div className="menu">
+    <div className={styles.menuLinks}>
       {/* Links */}
 
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="products">Products</NavLink>
-      <NavLink to="cart">
+      <NavLink to="/" className={styles.menuItem}>
+        Home
+      </NavLink>
+      <NavLink to="products" className={styles.menuItem}>
+        Products
+      </NavLink>
+      <NavLink to="cart" className={styles.menuItem}>
         <span>Cart</span>
         <div className="cart-icon">{cartItemsCount}</div>
       </NavLink>

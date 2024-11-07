@@ -1,9 +1,38 @@
 /* Navigation*/
 .navbar {
   background-color: #bbecdc;
-  height: 3.2rem;
+  height: 4rem;
   padding: 1rem 2rem;
   display: flex;
   text-align: center;
   justify-content: space-between;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+.navbar h1 {
+  color: #9c3232;
+}
+.menuLinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.menuItem {
+  color: #140909;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+.menuItem:hover {
+  color: #851111;
+}
+.menuItem a.active {
+  color: #851111;
+}
+.menuItem div {
+  background-color: #ffffff;
+  border: 1px solid #851111;
+  padding: 0 0.4rem;
 }

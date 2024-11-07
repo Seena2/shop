@@ -18,6 +18,7 @@ const Home = () => {
     <div className="home-page">
       <Header cartItemsCount={cartItems.length} />
       <ProductDetail addToCart={addToCart} products={products} />
+      <Outlet />
     </div>
   );
 };
