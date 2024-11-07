@@ -1,0 +1,9 @@
+/* Navigation*/
+.navbar {
+  background-color: #bbecdc;
+  height: 3.2rem;
+  padding: 1rem 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
